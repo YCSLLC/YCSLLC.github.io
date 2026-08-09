@@ -285,8 +285,6 @@ function footer() {
           <h3>Connect</h3>
           <a href="/contact/">Contact</a>
           <a href="/client-resources/">Client resources</a>
-          <a href="https://github.com/YCCLLC">GitHub organization</a>
-          <a href="https://github.com/Ab3y/YCC">Consulting platform</a>
         </div>
       </div>
       <div class="footer-bottom container">
@@ -737,7 +735,7 @@ function buildCompanyPages() {
     "/client-resources/",
     layout({
       title: "Client Resources",
-      description: "Resources and platform links for Yardley Crest Solutions clients and collaborators.",
+      description: "Resources for Yardley Crest Solutions clients and collaborators.",
       eyebrow: "Client resources",
       heading: "A clear place for shared work and delivery visibility.",
       intro: "Client-specific access instructions are provided directly as part of each engagement.",
@@ -745,8 +743,8 @@ function buildCompanyPages() {
       content: `<section>
           <div class="container">
             <div class="grid two">
-              <article class="card"><div class="card-kicker">Consulting platform</div><h3>Engagement operations</h3><p>The Yardley Crest platform supports opportunities, projects, milestones, comments, reporting, and administration.</p><a href="https://github.com/Ab3y/YCC">View the platform repository</a></article>
-              <article class="card"><div class="card-kicker">Access support</div><h3>Need help accessing a resource?</h3><p>Use the approved contact channel supplied by your Yardley Crest engagement lead. Do not post confidential client information on public GitHub pages.</p><a href="/contact/">View contact options</a></article>
+              <article class="card"><div class="card-kicker">Consulting platform</div><h3>Engagement operations</h3><p>The Yardley Crest platform supports opportunities, projects, milestones, comments, reporting, and administration. Access instructions are provided directly to approved users.</p></article>
+              <article class="card"><div class="card-kicker">Access support</div><h3>Need help accessing a resource?</h3><p>Use the approved contact channel supplied by your Yardley Crest engagement lead. Do not post confidential client information through public channels.</p><a href="/contact/">View contact options</a></article>
             </div>
           </div>
         </section>
@@ -758,20 +756,17 @@ function buildCompanyPages() {
     "/contact/",
     layout({
       title: "Contact",
-      description: "Connect with Yardley Crest Solutions through its official GitHub presence.",
+      description: "Contact information for Yardley Crest Solutions.",
       eyebrow: "Contact",
       heading: "Start with the outcome you need to achieve.",
       intro: "Verified business email, telephone, and office information will be added once approved for public use.",
       breadcrumbs: [["/contact/", "Contact"]],
       content: `<section>
-          <div class="container">
-            <div class="grid two">
-              <article class="card"><div class="card-kicker">Official organization</div><h3>YCCLLC on GitHub</h3><p>Review the public organization profile and published repositories.</p><a href="https://github.com/YCCLLC">Visit the organization</a></article>
-              <article class="card"><div class="card-kicker">Company platform</div><h3>Yardley Crest platform</h3><p>Explore the source repository used as the current public reference for the company's capabilities.</p><a href="https://github.com/Ab3y/YCC">View the repository</a></article>
-            </div>
+          <div class="container narrow">
+            <div class="empty-state"><h2>Public contact details are coming soon</h2><p>Verified business email, telephone, and office information will be published after approval.</p></div>
           </div>
         </section>
-        <section class="section-alt"><div class="container narrow"><div class="notice">Do not send confidential, personal, financial, or regulated information through public GitHub channels.</div></div></section>`
+        <section class="section-alt"><div class="container narrow"><div class="notice">Do not send confidential, personal, financial, or regulated information through unapproved public channels.</div></div></section>`
     })
   );
 }
@@ -794,7 +789,7 @@ function buildPolicyPages() {
       intro: "This static website is designed to collect as little personal information as possible.",
       sections: [
         ["Information collected", "The site does not currently include account registration, analytics scripts, advertising trackers, or a hosted contact form. GitHub may process technical information when serving GitHub Pages."],
-        ["External links", "Links to GitHub and other services are governed by those services' privacy practices. Review their notices before submitting information."],
+        ["External services", "Third-party services are governed by their own privacy practices. Review their notices before submitting information."],
         ["Sensitive information", "Do not send confidential client data, credentials, financial information, health information, or other sensitive content through public repositories or public GitHub channels."],
         ["Changes", "This notice may be updated as the website, contact methods, analytics, or client services evolve."],
       ],
@@ -807,7 +802,7 @@ function buildPolicyPages() {
         ["Informational purpose", "Website content is provided for general informational purposes and does not create a consulting, fiduciary, legal, tax, accounting, employment, or other professional relationship."],
         ["No guarantee", "Illustrative approaches and potential outcomes depend on context, implementation, leadership decisions, data quality, and other factors. Results are not guaranteed."],
         ["Intellectual property", "Unless otherwise stated, site branding and original content are owned by or used with permission by Yardley Crest Solutions LLC."],
-        ["External services", "The site links to third-party services, including GitHub. Yardley Crest is not responsible for third-party content, availability, or practices."],
+        ["External services", "Yardley Crest is not responsible for third-party content, availability, or practices."],
         ["Acceptable use", "Do not attempt to disrupt the site, misuse public channels, impersonate the company, or submit unlawful or harmful content."],
       ],
     },
