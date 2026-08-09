@@ -3,6 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const siteUrl = "https://yccllc.github.io";
+const inquiryMailto = "mailto:yardleycrestsolutions@gmail.com?subject=Online%20Inquiry&amp;body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20learn%20more%20about%20your%20professional%20services.%20Please%20reach%20out%20at%20your%20earliest%20convenience.%0D%0A%0D%0AServices%20I%20am%20looking%20for%3A%0D%0A%0D%0ADetailed%20description%20of%20my%20need%3A%0D%0A%0D%0AMy%20contact%20information%3A%0D%0A";
 let generatedCount = 0;
 
 const departments = [
@@ -254,7 +255,7 @@ function nav(active) {
             <div class="dropdown-panel">${departmentLinks}</div>
           </div>
           ${links}
-          <a class="button" href="/contact/">Contact</a>
+          <a class="button" href="${inquiryMailto}">Contact</a>
         </div>
       </nav>
     </header>`;
@@ -283,7 +284,7 @@ function footer() {
         </div>
         <div class="footer-column">
           <h3>Connect</h3>
-          <a href="/contact/">Contact</a>
+          <a href="${inquiryMailto}">Contact</a>
           <a href="/client-resources/">Client resources</a>
         </div>
       </div>
@@ -379,7 +380,7 @@ function cta(title = "Start a focused conversation.", text = "Connect with Yardl
           <h2>${title}</h2>
           <p>${text}</p>
           <div class="actions" style="justify-content:center">
-            <a class="button" href="/contact/">Connect with us</a>
+            <a class="button" href="${inquiryMailto}">Connect with us</a>
             <a class="button secondary" href="/services/">Explore services</a>
           </div>
         </div>
@@ -699,7 +700,7 @@ function buildCompanyPages() {
             </div>
           </div>
         </section>
-        ${cta("Explore a partnership conversation.", "Use the contact page to share your capabilities, relevant experience, and the types of client outcomes you support.")}`
+        ${cta("Explore a partnership conversation.", "Email us to share your capabilities, relevant experience, and the types of client outcomes you support.")}`
     })
   );
 
@@ -744,7 +745,7 @@ function buildCompanyPages() {
           <div class="container">
             <div class="grid two">
               <article class="card"><div class="card-kicker">Consulting platform</div><h3>Engagement operations</h3><p>The Yardley Crest platform supports opportunities, projects, milestones, comments, reporting, and administration. Access instructions are provided directly to approved users.</p></article>
-              <article class="card"><div class="card-kicker">Access support</div><h3>Need help accessing a resource?</h3><p>Use the approved contact channel supplied by your Yardley Crest engagement lead. Do not post confidential client information through public channels.</p><a href="/contact/">View contact options</a></article>
+              <article class="card"><div class="card-kicker">Access support</div><h3>Need help accessing a resource?</h3><p>Use the approved contact channel supplied by your Yardley Crest engagement lead. Do not post confidential client information through public channels.</p><a href="${inquiryMailto}">Email us</a></article>
             </div>
           </div>
         </section>
@@ -759,11 +760,11 @@ function buildCompanyPages() {
       description: "Contact information for Yardley Crest Solutions.",
       eyebrow: "Contact",
       heading: "Start with the outcome you need to achieve.",
-      intro: "Verified business email, telephone, and office information will be added once approved for public use.",
+      intro: "Email Yardley Crest Solutions with the services you need and the outcome you want to achieve.",
       breadcrumbs: [["/contact/", "Contact"]],
       content: `<section>
           <div class="container narrow">
-            <div class="empty-state"><h2>Public contact details are coming soon</h2><p>Verified business email, telephone, and office information will be published after approval.</p></div>
+            <div class="cta"><h2>Tell us how we can help</h2><p>Your email will open with a short inquiry template you can complete.</p><a class="button" href="${inquiryMailto}">Start an email</a></div>
           </div>
         </section>
         <section class="section-alt"><div class="container narrow"><div class="notice">Do not send confidential, personal, financial, or regulated information through unapproved public channels.</div></div></section>`
